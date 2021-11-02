@@ -162,13 +162,13 @@ let scissors = 2;
 let computer = Math.floor(5 * Math.random());
 
 function game(user, computer){
-  if (computer - user === 0) {
-    return "it's a tie"
-  } else if (computer - user === 1 || computer - user === -2) {
+  if(user === computer){
+    return "it's a tie";
+  }else if(user < computer){
+    return "you win!";
+  }else if(user > computer){
     return "you lose!"
-  } else {
-    return "you win!"
-  }
+  }else return "Come on you got this. "
 }
 
 console.log(game(computer, paper));
