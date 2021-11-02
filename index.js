@@ -60,10 +60,12 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a , b){
+  return a * b;
 }
 
+//console.log('Task 1d');
+//console.log(multiply(2,6));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -76,10 +78,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(peopleYears){
+  return peopleYears * 7;
 }
 
+//console.log('Task 2');
+//console.log(dogYears(2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -127,7 +131,8 @@ function hungryDog(weight, age){
   }
 }
 
-console.log('task 3', hungryDog(15,1));
+// console.log('Task 3');
+//console.log('task 3', hungryDog(15,1));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -150,10 +155,24 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+let rock = 0;
+let paper = 1;
+let scissors = 2;
+//let player = prompt("enter a choice")
+let computer = Math.floor(5 * Math.random());
+
 function game(user, computer){
-  /*add your code here*/
+  if (computer - user === 0) {
+    return "it's a tie"
+  } else if (computer - user === 1 || computer - user === -2) {
+    return "you lose!"
+  } else {
+    return "you win!"
+  }
 }
 
+console.log(game(computer, paper));
+console.log(computer);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -167,10 +186,12 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers){
+  return kilometers * 0.621371
 }
 
+console.log('Task 5');
+console.log(miles(2));
 
 
 //Task 5b - Feet to CM
@@ -181,10 +202,13 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet( cm ){
+  let feet = cm / 30.48;
+  return feet
 }
 
+console.log('Task 5b');
+console.log(feet(7));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -197,9 +221,15 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(num){
+  for (let i = num; i > 0; i--){
+      let count = i - 1;
+      console.log(i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + count + " bottles of soda on the wall");
+  }
 }
+
+console.log('Task 6');
+console.log(annoyingSong(6));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -217,10 +247,24 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+  if (score >= 90 && score <= 100) {
+    return `you got an A`
+  } else if (score >= 80 && score <= 89) {
+    return `you got a B`
+  } else if (score >= 70 && score <= 79) {
+    return `you got a C`
+  } else if (score >= 60 && score <= 69) {
+    return `you got a D`
+  } else if (score >= 0 && score <= 59) {
+    return `you got an F`
+  } else {
+    return `that is not a valid score`
+  }
 }
 
+console.log('Task 7');
+console.log(grade(62));
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
