@@ -64,7 +64,7 @@ function multiply(a , b){
   return a * b;
 }
 
-//console.log('Task 1d');
+//console.log('Task 1d 🚀');
 //console.log(multiply(2,6));
 
 
@@ -82,7 +82,7 @@ function dogYears(peopleYears){
   return peopleYears * 7;
 }
 
-//console.log('Task 2');
+//console.log('Task 2 🚀');
 //console.log(dogYears(2));
 
 
@@ -131,8 +131,8 @@ function hungryDog(weight, age){
   }
 }
 
-// console.log('Task 3');
-//console.log('task 3', hungryDog(15,1));
+// console.log('Task 3 🚀');
+//console.log('task 3 🚀', hungryDog(15,1));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -167,12 +167,13 @@ function game(user, computer){
   }else if(user < computer){
     return "you win!";
   }else if(user > computer){
-    return "you lose!"
+    return "you lose!";
   }else return "Come on you got this. "
 }
 
-console.log(game(computer, paper));
-console.log(computer);
+console.log('Task 4 🚀');
+console.log(game(computer, 'paper'));
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -190,7 +191,7 @@ function miles(kilometers){
   return kilometers * 0.621371
 }
 
-console.log('Task 5');
+console.log('Task 5 🚀');
 console.log(miles(2));
 
 
@@ -207,7 +208,7 @@ function feet( cm ){
   return feet
 }
 
-console.log('Task 5b');
+console.log('Task 5b 🚀');
 console.log(feet(7));
 
 
@@ -221,15 +222,15 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(num){
-  for (let i = num; i > 0; i--){
-      let count = i - 1;
-      console.log(i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + count + " bottles of soda on the wall");
+function annoyingSong(numBottles){
+  for(let i = numBottles; i > 0; i--) {
+      let leftOver = i - 1;
+      return i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + leftOver + " bottles of soda on the wall"
   }
 }
 
-console.log('Task 6');
-console.log(annoyingSong(6));
+console.log('Task 6 🚀');
+console.log(annoyingSong(5));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -263,7 +264,7 @@ function grade(score){
   }
 }
 
-console.log('Task 7');
+console.log('Task 7 🚀');
 console.log(grade(62));
 
 
